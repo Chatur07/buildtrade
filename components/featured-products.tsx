@@ -15,7 +15,7 @@ const featuredProducts = [
     name: "Premium AAC Blocks",
     category: "AAC Blocks",
     price: "$120/m³",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Premium_AAC_Blocks.svg?height=300&width=400",
     badge: "Best Seller",
   },
   {
@@ -23,7 +23,7 @@ const featuredProducts = [
     name: "TMT Steel Bars",
     category: "Iron",
     price: "$85/quintal",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/TMT_steel_bars.svg?height=300&width=400",
     badge: "New",
   },
   {
@@ -31,14 +31,14 @@ const featuredProducts = [
     name: "River Sand",
     category: "Sand",
     price: "$45/ton",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/River_sand.svg?height=300&width=400",
   },
   {
     id: 4,
     name: "Ceramic Floor Tiles",
     category: "Tiles",
     price: "$8/sq.ft",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Ceramic_floor_tiles.svg?height=300&width=400",
     badge: "Sale",
   },
   {
@@ -46,7 +46,7 @@ const featuredProducts = [
     name: "Luxury Bathtub",
     category: "Bath Tubs",
     price: "$450/piece",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Luxury_bathtub.svg?height=300&width=400",
     badge: "Premium",
   },
   {
@@ -54,14 +54,14 @@ const featuredProducts = [
     name: "Modern Faucet Set",
     category: "Tappees",
     price: "$75/set",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Modern_faucet_set.svg?height=300&width=400",
   },
   {
     id: 7,
     name: "Power Tools Kit",
     category: "Hardware",
     price: "$220/kit",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Power_tools_kit.svg?height=300&width=400",
     badge: "Limited",
   },
   {
@@ -69,7 +69,7 @@ const featuredProducts = [
     name: "Marble Flooring",
     category: "Tiles",
     price: "$25/sq.ft",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Marble_flooring.svg?height=300&width=400",
   },
 ]
 
