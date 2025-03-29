@@ -60,7 +60,7 @@ export default function AboutSection() {
           <div className="md:w-1/2">
             <div className="about-image relative rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/about.svg?height=600&width=800"
                 alt="About BuildTrade"
                 width={800}
                 height={600}
