@@ -1,0 +1,287 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.name }} - BuildTrade{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">{{ product.name }}</h1>
+        <div class="breadcrumbs">
+            <a href="/" class="breadcrumb-item">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#products" class="breadcrumb-item">Products</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="/products/{{ product.category_id }}" class="breadcrumb-item">{{ product.category }}</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-item active">{{ product.name }}</span>
+        </div>
+    </div>
+</section>
+
+<section class="product-detail-section">
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="{{ product.image }}" alt="{{ product.name }}" id="main-product-image">
+                    {% if product.badge %}
+                    <span class="product-badge">{{ product.badge }}</span>
+                    {% endif %}
+                </div>
+                <div class="thumbnail-images">
+                    <div class="thumbnail active" data-image="{{ product.image }}">
+                        <img src="{{ product.image }}" alt="{{ product.name }}">
+                    </div>
+                    <!-- In a real application, you would have multiple images -->
+                    <div class="thumbnail" data-image="{{ product.image }}">
+                        <img src="{{ product.image }}" alt="{{ product.name }} - Angle 2">
+                    </div>
+                    <div class="thumbnail" data-image="{{ product.image }}">
+                        <img src="{{ product.image }}" alt="{{ product.name }} - Angle 3">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <span class="product-category">{{ product.category }}</span>
+                <h1 class="product-title">{{ product.name }}</h1>
+                <div class="product-price">{{ product.price }}</div>
+                <p class="product-description">{{ product.description }}</p>
+                
+                <div class="product-features">
+                    <h3>Key Features</h3>
+                    <ul class="features-list">
+                        {% for feature in product.features %}
+                        <li><i class="fas fa-check"></i> {{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus" id="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input" id="quantity">
+                        <button class="quantity-btn plus" id="quantity-plus">+</button>
+                    </div>
+                    <button class="btn btn-primary add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+                
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">SKU:</span>
+                        <span class="meta-value">{{ product.id|string|zfill(6) }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Category:</span>
+                        <a href="/products/{{ product.category_id }}" class="meta-value">{{ product.category }}</a>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Share:</span>
+                        <div class="social-share">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-tabs">
+            <div class="tabs-header">
+                <button class="tab-button active" data-tab="description">Description</button>
+                <button class="tab-button" data-tab="specifications">Specifications</button>
+                <button class="tab-button" data-tab="reviews">Reviews</button>
+            </div>
+            
+            <div class="tabs-content">
+                <div class="tab-content active" id="tab-description">
+                    <h3>Product Description</h3>
+                    <p>{{ product.description }}</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.</p>
+                    <p>Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.</p>
+                </div>
+                
+                <div class="tab-content" id="tab-specifications">
+                    <h3>Product Specifications</h3>
+                    <table class="specifications-table">
+                        <tbody>
+                            {% for key, value in product.specifications.items() %}
+                            <tr>
+                                <th>{{ key }}</th>
+                                <td>{{ value }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="tab-content" id="tab-reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="reviews-summary">
+                        <div class="average-rating">
+                            <div class="rating-number">4.5</div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="rating-count">Based on 12 reviews</div>
+                        </div>
+                        
+                        <div class="rating-bars">
+                            <div class="rating-bar">
+                                <span class="rating-label">5 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 75%"></div>
+                                </div>
+                                <span class="rating-count">9</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">4 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 17%"></div>
+                                </div>
+                                <span class="rating-count">2</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">3 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 8%"></div>
+                                </div>
+                                <span class="rating-count">1</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">2 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 0%"></div>
+                                </div>
+                                <span class="rating-count">0</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-label">1 Star</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 0%"></div>
+                                </div>
+                                <span class="rating-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">
+                                        <img src="{{ url_for('static', filename='images/user-1.jpg') }}" alt="User">
+                                    </div>
+                                    <div class="reviewer-meta">
+                                        <h4 class="reviewer-name">Robert Johnson</h4>
+                                        <div class="review-date">June 15, 2023</div>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>Excellent product quality. Exactly as described and delivered on time. Would definitely purchase again.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">
+                                        <img src="{{ url_for('static', filename='images/user-2.jpg') }}" alt="User">
+                                    </div>
+                                    <div class="reviewer-meta">
+                                        <h4 class="reviewer-name">Amanda Williams</h4>
+                                        <div class="review-date">May 28, 2023</div>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>Great product, very durable and well-made. Shipping was fast and the packaging was secure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="write-review">
+                        <h3>Write a Review</h3>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <label for="review-name">Your Name</label>
+                                <input type="text" id="review-name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-email">Your Email</label>
+                                <input type="email" id="review-email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Rating</label>
+                                <div class="rating-selector">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-content">Your Review</label>
+                                <textarea id="review-content" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="related-products">
+            <h2 class="section-title">Related Products</h2>
+            <div class="product-grid">
+                {% for product in products[:4] if product.category_id == product.category_id and product.id != product.id %}
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="{{ product.image }}" alt="{{ product.name }}">
+                        {% if product.badge %}
+                        <span class="product-badge">{{ product.badge }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">{{ product.category }}</span>
+                        <h3 class="product-title">{{ product.name }}</h3>
+                        <div class="product-footer">
+                            <span class="product-price">{{ product.price }}</span>
+                            <a href="/product/{{ product.id }}" class="product-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/product-detail.js') }}"></script>
+{% endblock %}
+

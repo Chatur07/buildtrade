@@ -1,0 +1,311 @@
+[
+  {
+    "id": 1,
+    "name": "Premium AAC Blocks",
+    "category": "AAC Blocks",
+    "category_id": "aac-blocks",
+    "price": "$120/m³",
+    "image": "/static/images/aac-blocks.jpg",
+    "badge": "Best Seller",
+    "description": "High-quality AAC blocks with excellent thermal insulation properties. Perfect for energy-efficient construction.",
+    "features": [
+      "Lightweight and easy to handle",
+      "Excellent thermal insulation",
+      "Fire resistant",
+      "Sound insulation",
+      "Environmentally friendly"
+    ],
+    "specifications": {
+      "Dimensions": "600mm x 200mm x 100mm",
+      "Density": "550-650 kg/m³",
+      "Compressive Strength": "3.5-4.0 N/mm²",
+      "Thermal Conductivity": "0.16-0.18 W/mK"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Standard AAC Block",
+    "category": "AAC Blocks",
+    "category_id": "aac-blocks",
+    "price": "$100/m³",
+    "image": "/static/images/aac-blocks-2.jpg",
+    "description": "Standard AAC blocks for general construction purposes. Provides good thermal insulation and is easy to work with.",
+    "features": [
+      "Lightweight construction",
+      "Good thermal properties",
+      "Easy to cut and shape",
+      "Reduces construction time"
+    ],
+    "specifications": {
+      "Dimensions": "600mm x 200mm x 150mm",
+      "Density": "600-700 kg/m³",
+      "Compressive Strength": "3.0-3.5 N/mm²",
+      "Thermal Conductivity": "0.18-0.20 W/mK"
+    }
+  },
+  {
+    "id": 3,
+    "name": "TMT Steel Bars",
+    "category": "Iron & Steel",
+    "category_id": "iron",
+    "price": "$85/quintal",
+    "image": "/static/images/tmt-steel.jpg",
+    "badge": "New",
+    "description": "High-strength Thermo-Mechanically Treated (TMT) steel bars for reinforced concrete structures.",
+    "features": [
+      "High tensile strength",
+      "Excellent ductility",
+      "Superior bonding with concrete",
+      "Earthquake resistant",
+      "Corrosion resistant"
+    ],
+    "specifications": {
+      "Diameter": "8mm, 10mm, 12mm, 16mm, 20mm, 25mm",
+      "Grade": "Fe 500D",
+      "Yield Strength": "500 N/mm²",
+      "Elongation": "≥ 16%"
+    }
+  },
+  {
+    "id": 4,
+    "name": "MS Angle Iron",
+    "category": "Iron & Steel",
+    "category_id": "iron",
+    "price": "$95/piece",
+    "image": "/static/images/angle-iron.jpg",
+    "description": "Mild Steel angle iron for structural applications. Ideal for frameworks, supports, and braces.",
+    "features": [
+      "High strength-to-weight ratio",
+      "Versatile applications",
+      "Easy to weld and fabricate",
+      "Durable and long-lasting"
+    ],
+    "specifications": {
+      "Size": "25mm x 25mm x 3mm to 100mm x 100mm x 10mm",
+      "Length": "6 meters",
+      "Material": "Mild Steel",
+      "Finish": "Hot-dipped galvanized"
+    }
+  },
+  {
+    "id": 5,
+    "name": "River Sand",
+    "category": "Sand & Aggregates",
+    "category_id": "sand",
+    "price": "$45/ton",
+    "image": "/static/images/river-sand.jpg",
+    "description": "Natural river sand for concrete mixing, plastering, and masonry work. Free from impurities and clay content.",
+    "features": [
+      "Natural grain size distribution",
+      "Low silt content",
+      "Excellent workability",
+      "Better bonding with cement"
+    ],
+    "specifications": {
+      "Grain Size": "0.15mm to 4.75mm",
+      "Specific Gravity": "2.65",
+      "Silt Content": "< 3%",
+      "Moisture Content": "< 7%"
+    }
+  },
+  {
+    "id": 6,
+    "name": "M-Sand",
+    "category": "Sand & Aggregates",
+    "category_id": "sand",
+    "price": "$40/ton",
+    "image": "/static/images/m-sand.jpg",
+    "description": "Manufactured sand (M-Sand) as an alternative to river sand. Produced by crushing hard granite stone.",
+    "features": [
+      "Consistent gradation",
+      "Zero impurities",
+      "Eco-friendly alternative to river sand",
+      "Better concrete strength"
+    ],
+    "specifications": {
+      "Grain Size": "0.15mm to 4.75mm",
+      "Specific Gravity": "2.70",
+      "Silt Content": "< 2%",
+      "Shape": "Cubical with rounded edges"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Masonry Tools Set",
+    "category": "Hardware Items",
+    "category_id": "hardware",
+    "price": "$120/set",
+    "image": "/static/images/masonry-tools.jpg",
+    "description": "Complete set of professional masonry tools for construction work. Includes trowels, floats, levels, and more.",
+    "features": [
+      "Professional-grade tools",
+      "Ergonomic handles",
+      "Durable stainless steel",
+      "Complete set for all masonry needs"
+    ],
+    "specifications": {
+      "Number of Tools": "12 pieces",
+      "Material": "Stainless steel with rubber handles",
+      "Case": "Heavy-duty carrying case included",
+      "Weight": "5.5 kg"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Power Tools Kit",
+    "category": "Hardware Items",
+    "category_id": "hardware",
+    "price": "$220/kit",
+    "image": "/static/images/power-tools.jpg",
+    "badge": "Limited",
+    "description": "Comprehensive power tools kit for construction and renovation projects. Includes drill, grinder, saw, and more.",
+    "features": [
+      "High-performance motors",
+      "Rechargeable lithium-ion batteries",
+      "Ergonomic design",
+      "Versatile applications"
+    ],
+    "specifications": {
+      "Number of Tools": "5 pieces",
+      "Power": "18V",
+      "Battery": "2 x 4.0Ah Li-ion",
+      "Warranty": "3 years"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Ceramic Floor Tiles",
+    "category": "Tiles & Flooring",
+    "category_id": "tiles",
+    "price": "$8/sq.ft",
+    "image": "/static/images/ceramic-tiles.jpg",
+    "badge": "Sale",
+    "description": "Premium ceramic floor tiles with elegant designs. Suitable for living rooms, bedrooms, and kitchens.",
+    "features": ["Stain resistant", "Easy to clean", "Durable and long-lasting", "Wide range of designs"],
+    "specifications": {
+      "Size": "600mm x 600mm",
+      "Thickness": "9mm",
+      "Surface": "Matt finish",
+      "Water Absorption": "< 0.5%"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Vitrified Tiles",
+    "category": "Tiles & Flooring",
+    "category_id": "tiles",
+    "price": "$12/sq.ft",
+    "image": "/static/images/vitrified-tiles.jpg",
+    "description": "High-quality vitrified tiles with marble-like appearance. Perfect for high-traffic areas.",
+    "features": ["Low water absorption", "Scratch resistant", "High gloss finish", "Uniform color throughout"],
+    "specifications": {
+      "Size": "800mm x 800mm",
+      "Thickness": "10mm",
+      "Surface": "Polished",
+      "Water Absorption": "< 0.1%"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Kitchen Sink Mixer",
+    "category": "Tappees & Faucets",
+    "category_id": "tappees",
+    "price": "$45/piece",
+    "image": "/static/images/sink-mixer.jpg",
+    "description": "Modern kitchen sink mixer with single-lever operation. Features a sleek design and durable construction.",
+    "features": ["Single-lever operation", "360° swivel spout", "Ceramic disc cartridge", "Chrome finish"],
+    "specifications": {
+      "Material": "Brass with chrome plating",
+      "Height": "350mm",
+      "Spout Reach": "220mm",
+      "Installation": "Deck mounted"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Bathroom Faucet",
+    "category": "Tappees & Faucets",
+    "category_id": "tappees",
+    "price": "$35/piece",
+    "image": "/static/images/bathroom-faucet.jpg",
+    "description": "Elegant bathroom faucet with water-saving technology. Perfect for modern bathrooms.",
+    "features": ["Water-saving aerator", "Smooth operation", "Drip-free performance", "Easy installation"],
+    "specifications": {
+      "Material": "Brass with chrome plating",
+      "Height": "150mm",
+      "Spout Reach": "120mm",
+      "Installation": "Single hole"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Acrylic Bathtub",
+    "category": "Bath Tubs",
+    "category_id": "bathtubs",
+    "price": "$350/piece",
+    "image": "/static/images/acrylic-bathtub.jpg",
+    "description": "Standard acrylic bathtub with sleek design. Provides comfort and durability for everyday use.",
+    "features": ["Lightweight yet durable", "Retains heat well", "Easy to clean", "Scratch resistant"],
+    "specifications": {
+      "Dimensions": "1700mm x 700mm x 400mm",
+      "Material": "Reinforced acrylic",
+      "Capacity": "230 liters",
+      "Weight": "25 kg"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Luxury Bathtub",
+    "category": "Bath Tubs",
+    "category_id": "bathtubs",
+    "price": "$450/piece",
+    "image": "/static/images/luxury-bathtub.jpg",
+    "badge": "Premium",
+    "description": "Luxury freestanding bathtub with modern design. The centerpiece for any premium bathroom.",
+    "features": [
+      "Freestanding design",
+      "Double-walled for better insulation",
+      "Adjustable feet for leveling",
+      "Overflow protection"
+    ],
+    "specifications": {
+      "Dimensions": "1800mm x 800mm x 600mm",
+      "Material": "Reinforced acrylic with fiberglass",
+      "Capacity": "280 liters",
+      "Weight": "40 kg"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Jacuzzi Bathtub",
+    "category": "Bath Tubs",
+    "category_id": "bathtubs",
+    "price": "$850/piece",
+    "image": "/static/images/jacuzzi-bathtub.jpg",
+    "description": "Premium jacuzzi bathtub with hydrotherapy jets. Perfect for relaxation and therapeutic benefits.",
+    "features": ["6 adjustable jets", "LED chromotherapy lighting", "Digital control panel", "Built-in heater"],
+    "specifications": {
+      "Dimensions": "1800mm x 900mm x 600mm",
+      "Material": "Acrylic with fiberglass reinforcement",
+      "Power": "1.5 HP pump",
+      "Jets": "6 hydrotherapy jets"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Marble Flooring",
+    "category": "Tiles & Flooring",
+    "category_id": "tiles",
+    "price": "$25/sq.ft",
+    "image": "/static/images/marble-flooring.jpg",
+    "description": "Natural marble flooring tiles for luxurious interiors. Adds elegance and value to any space.",
+    "features": ["Natural stone beauty", "Unique patterns", "Increases property value", "Long-lasting durability"],
+    "specifications": {
+      "Size": "600mm x 600mm",
+      "Thickness": "18mm",
+      "Finish": "Polished",
+      "Origin": "Italian Carrara"
+    }
+  }
+]
+
