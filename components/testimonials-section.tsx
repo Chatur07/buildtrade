@@ -24,7 +24,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Architect",
     company: "Modern Designs",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/user_icon.svg?height=100&width=100",
     content:
       "I've recommended BuildTrade to all my clients. Their extensive range of high-quality materials and excellent customer service make them stand out in the industry.",
     rating: 5,
@@ -34,7 +34,7 @@ const testimonials = [
     name: "Michael Brown",
     role: "Independent Contractor",
     company: "Brown Construction",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/user_icon.svg?height=100&width=100",
     content:
       "As an independent contractor, I value suppliers who provide quality materials at competitive prices. BuildTrade has consistently met my expectations and helped me deliver quality work to my clients.",
     rating: 4,
@@ -44,7 +44,7 @@ const testimonials = [
     name: "Emily Davis",
     role: "Project Manager",
     company: "Davis & Associates",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/user_icon.svg?height=100&width=100",
     content:
       "The team at BuildTrade understands the importance of timely delivery in construction projects. Their reliable service has helped us avoid costly delays on multiple occasions.",
     rating: 5,
@@ -54,7 +54,7 @@ const testimonials = [
     name: "Robert Wilson",
     role: "Interior Designer",
     company: "Elegant Interiors",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/user_icon.svg?height=100&width=100",
     content:
       "The quality of tiles and bath fixtures from BuildTrade is exceptional. My clients are always impressed with the final results, which has helped me grow my interior design business.",
     rating: 5,
@@ -64,7 +64,7 @@ const testimonials = [
     name: "Jennifer Lee",
     role: "Home Builder",
     company: "Lee Custom Homes",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/user_icon.svg?height=100&width=100",
     content:
       "BuildTrade's wide selection of construction materials has been invaluable for my custom home building business. Their expert advice has helped me choose the right materials for each project.",
     rating: 4,
