@@ -23,7 +23,7 @@ const featuredProducts = [
     name: "TMT Steel Bars",
     category: "Iron",
     price: "$85/quintal",
-    image: "/TMT_steel_bars.svg?height=300&width=400",
+    image: "/tmt_steel_bars.svg?height=300&width=400",
     badge: "New",
   },
   {
