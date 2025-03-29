@@ -58,7 +58,7 @@ const categories = [
     id: "tiles",
     name: "Tiles & Flooring",
     description: "Premium tiles, marbles, and flooring solutions for beautiful interiors.",
-    image: "/tiles_marvels.svg?height=300&width=400",
+    image: "/tiles_marbels.svg?height=300&width=400",
     products: [
       { id: 1, name: "Ceramic Floor Tiles", price: "$8/sq.ft" },
       { id: 2, name: "Vitrified Tiles", price: "$12/sq.ft" },
