@@ -14,7 +14,7 @@ const categories = [
     id: "aac-blocks",
     name: "AAC Blocks",
     description: "Lightweight, eco-friendly building blocks with excellent thermal insulation.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/aac_blocks.svg?height=300&width=400",
     products: [
       { id: 1, name: "Standard AAC Block", price: "$2.50/piece" },
       { id: 2, name: "Jumbo AAC Block", price: "$4.75/piece" },
@@ -25,7 +25,7 @@ const categories = [
     id: "iron",
     name: "Iron & Steel",
     description: "High-quality structural steel, TMT bars, and iron products for construction.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/tmt_bars.svg?height=300&width=400",
     products: [
       { id: 1, name: "TMT Steel Bars (8mm)", price: "$85/quintal" },
       { id: 2, name: "MS Angle Iron", price: "$95/piece" },
@@ -36,7 +36,7 @@ const categories = [
     id: "sand",
     name: "Sand & Aggregates",
     description: "Various grades of sand and aggregates for concrete mixing and construction.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/sand.svg?height=300&width=400",
     products: [
       { id: 1, name: "River Sand", price: "$45/ton" },
       { id: 2, name: "M-Sand", price: "$40/ton" },
@@ -47,7 +47,7 @@ const categories = [
     id: "hardware",
     name: "Hardware Items",
     description: "Essential hardware tools and accessories for construction and maintenance.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/hardware_tools.svg?height=300&width=400",
     products: [
       { id: 1, name: "Masonry Tools Set", price: "$120/set" },
       { id: 2, name: "Construction Nails (1kg)", price: "$8/pack" },
@@ -58,7 +58,7 @@ const categories = [
     id: "tiles",
     name: "Tiles & Flooring",
     description: "Premium tiles, marbles, and flooring solutions for beautiful interiors.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/tiles_marvels.svg?height=300&width=400",
     products: [
       { id: 1, name: "Ceramic Floor Tiles", price: "$8/sq.ft" },
       { id: 2, name: "Vitrified Tiles", price: "$12/sq.ft" },
@@ -69,7 +69,7 @@ const categories = [
     id: "tappees",
     name: "Tappees & Faucets",
     description: "Modern and durable tappees and faucets for kitchens and bathrooms.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/taps.svg?height=300&width=400",
     products: [
       { id: 1, name: "Kitchen Sink Mixer", price: "$45/piece" },
       { id: 2, name: "Bathroom Faucet", price: "$35/piece" },
@@ -80,7 +80,7 @@ const categories = [
     id: "bathtubs",
     name: "Bath Tubs",
     description: "Luxurious bath tubs and bathroom fixtures for modern homes.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/bathtub.svg?height=300&width=400",
     products: [
       { id: 1, name: "Acrylic Bathtub", price: "$350/piece" },
       { id: 2, name: "Jacuzzi Bathtub", price: "$850/piece" },
